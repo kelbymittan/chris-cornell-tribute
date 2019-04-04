@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.75;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+h1 {
+    font-size: 5.5rem;
+}
+
+p {
+    font-size: 1.125rem;
+}
+
+nav {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0);
+}
+
+nav ul {
+    display: flex;
+    padding-left: 60%;
+    justify-content: flex-end;
+    /* remove bullets */
+    list-style-type: none;
+    font-family: 'Old Standard TT', serif;
+    
+}
+
+nav ul li{
+    flex-grow: 1;
+    font-family: 'Old Standard TT', serif;
+    font-size: 1.5rem;
+}
+
+nav ul li:first-child{
+    flex-grow: 1;
+}
+
+nav ul a:link {
+    /* remove underline */
+    text-decoration: none;
+    color: #F3F3F3;
+    display: block;
+    padding: 10px 0;
+}
+
+nav ul a:visited {
+    color: #717171;
+}
+
+nav ul a:hover {
+    /* border-bottom: 1px solid red; */
+    background: #DADADA;
+    color: #000000;
+    text-decoration: underline;
+}
+
+body {
+    /*padding: 20%;*/
+    
+}
+#bio {
+    padding: 25px 100px 25px 100px;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    background-image: url(../img/chriscornell3.1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+
+#bio h1 {
+    color: #DBDBDB;
+    font-family: 'Cinzel', serif;
+}
+
+#bio p {
+    color: #DBDBDB;
+    font-family: 'Cinzel', serif;
+    width: 50%;
+}
+
+section {
+    /* height: 300px; */
+}
+
+#bands {
+    margin: 55px 0 50px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#bands article {
+    width: 49vw;
+    height: 100%;
+    padding: 20px;
+   /* overflow: auto; */
+    text-align: center;
+}
+
+#bands article h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+#bands article p, article h1 {
+    font-size: .85em;
+    text-align: left;
+}
+
+#bands article:first-child {
+    background: #EDA8A9;
+    
+}
+
+#bands article:last-child {
+    background: #A8EBED;
+}
+
+#wiki {
+    color: #F3F3F3;
+}
+
+/*#careerimg {
+    width: 400;
+    height: 600;
+}*/
+
+/*#bands artcle img {
+    width: 60%;
+    height: auto;
+}*/
+
+figcaption {
+    text-align: center;
+}
+
+#images {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Media Queries */
+/* https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
+
+@media screen and (max-width: 750px){
+    html {
+        font-size: 14px;
+    }
+    
+    header {
+        text-align: center;
+    }
+    
+    #bands {
+        flex-direction: column;
+    }
+    
+    #bands article {
+        width: 100vw;
+        height: auto;
+        overflow: visible;
+    }
+    
+    #bands article:first-child {
+        background: #316124;
+    
+    }
+
+    #bands article:last-child {
+        background: #582461;
+    }
+     
+    #images {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+}
