@@ -14,7 +14,7 @@ body {
 }
 
 h1 {
-    font-size: 5.5rem;
+    font-size: 3.5rem;
 }
 
 #setlist {
@@ -23,13 +23,13 @@ h1 {
 }
 
 #setlist ul {
-    margin-left: 100px;
+    margin-left: 75px;
     list-style-type: circle;
 }
 
 #setlist h2 {
     margin-left: 50px;
-    font-size: 2.0rem;
+    font-size: 1.5rem;
     text-decoration: underline;
 }
 
@@ -78,56 +78,59 @@ nav ul a:visited {
 }
 
 nav ul a:hover {
-    /* border-bottom: 1px solid red; */
     background: #DADADA;
     color: #000000;
     text-decoration: underline;
+    border-radius: 50px;
 }
 
-body {
-    /*padding: 20%;*/
-    
-}
+
 #tribute {
     padding: 50px 50px 170px 50px;
     width: 100%;
-    height: 100%;
-    background-color: lightblue;
-    background-image: url(../img/chris-cornell-tribute.jpg);
+    height: 100vh;
+    background-image: url(../img/cctrib1.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center center;
 }
 
 header h1 {
-    color: #F3F3F3;
+    color: #EDEDED;
     font-family: 'ZCOOL QingKe HuangYou', cursive;
+    margin-top: 100px;
+    text-shadow: 4px 4px #171717;
+    background: #000000;
+    width: 900px;
+    padding: 0px 5px;
+    border-radius: 40px;
+    padding-left: 20px;
 }
 
-header h2 {
-    color: #F3F3F3;
+/*header h2 {
+    color: #EDEDED;
     font-family: 'ZCOOL QingKe HuangYou', cursive;
     width: 60%;
-}
+    text-shadow: 4px 4px #171717;
+}*/
 
 header p {
-    color: #F3F3F3;
+    color: #EDEDED;
     font-family: 'Righteous', cursive;
-    width: 45%;
-    
+    margin-top: 35px;
+    width: 900px;
+    text-shadow: 4px 4px #171717;
+    padding-top: 10px;
+    background: #000000;
+    padding: 10px 5px;
+    border-radius: 40px;
+    padding-left: 20px;
 }
 
-section {
-    /* height: 300px; */
-}
 
-figcaption {
-    text-align: center;
-}
-
-#images {
-    display: flex;
-    justify-content: space-around;
+#setlist {
+    font-family: 'Old Standard TT', serif;
+    font-size: 1.5rem;
 }
 
 /* Media Queries */
