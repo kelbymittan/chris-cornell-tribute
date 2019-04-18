@@ -17,24 +17,8 @@ h1 {
     font-size: 3.5rem;
 }
 
-#setlist {
-    margin-left: 50px;
-    margin-bottom: 50px;
-}
-
-#setlist ul {
-    margin-left: 75px;
-    list-style-type: circle;
-}
-
-#setlist h2 {
-    margin-left: 50px;
-    font-size: 1.5rem;
-    text-decoration: underline;
-}
-
 p {
-    font-size: 1.75rem;
+    font-size: 1.55rem;
 }
 
 nav {
@@ -43,11 +27,13 @@ nav {
     top: 0;
     width: 100%;
     background: rgba(0, 0, 0);
+    z-index: 100;
 }
 
 nav ul {
     display: flex;
-    padding-left: 60%;
+    padding-left: 50%;
+    padding-right: 2%;
     justify-content: flex-end;
     /* remove bullets */
     list-style-type: none;
@@ -88,7 +74,7 @@ nav ul a:hover {
 #tribute {
     padding: 50px 50px 170px 50px;
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     background-image: url(../img/cctrib1.jpg);
     background-repeat: no-repeat;
     background-size:cover;
@@ -105,6 +91,7 @@ header h1 {
     padding: 0px 5px;
     border-radius: 40px;
     padding-left: 20px;
+    border: solid 5px #EDEDED;
 }
 
 /*header h2 {
@@ -125,16 +112,87 @@ header p {
     padding: 10px 5px;
     border-radius: 40px;
     padding-left: 20px;
+    border: solid 5px #EDEDED;
+
 }
 
 
 #setlist {
     font-family: 'Old Standard TT', serif;
     font-size: 1.5rem;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+#setlist h1 {
+    margin-left: 50px;
+}
+
+#setlist ul {
+    margin-left: 70px;
+    list-style-type: circle;
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+}
+
+#setlist h2 {
+    margin-left: 50px;
+    font-size: 1.5rem;
+    text-decoration: underline;
 }
 
 /* Media Queries */
-/* https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
+
+@media screen and (max-width: 1500px){
+    nav {
+        text-align: center;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: rgba(0, 0, 0);
+        z-index: 100;
+    }
+
+    nav ul {
+        display: flex;
+        padding-left: 0;
+        /*justify-content: flex-end;*/
+        /* remove bullets */
+        list-style-type: none;
+        font-family: 'Old Standard TT', serif;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    nav ul li{
+        flex-grow: 1;
+        font-family: 'Old Standard TT', serif;
+        font-size: 1.5rem;
+    }
+
+    nav ul li:first-child{
+        flex-grow: 1;
+    }
+
+    nav ul a:link {
+        /* remove underline */
+        text-decoration: none;
+        color: #F3F3F3;
+        display: block;
+        padding: 10px 0;
+    }
+    
+    nav ul a:visited {
+        color: #717171;
+    }
+    
+    nav ul a:hover {
+        background: #DADADA;
+        color: #000000;
+        text-decoration: underline;
+        border-radius: 50px;
+    }
+}
 
 @media screen and (max-width: 750px){
     html {
@@ -170,3 +228,4 @@ header p {
     }
     
 }
+

@@ -13,54 +13,80 @@
     <nav>
         <ul>
             <li><a href="index.html"> Home</a></li>
-            <li><a href="career.html">Career</a></li>
-            <li><a href="tribute.html">Tribute Concert</a></li>
-            <li><a href="fans.html">For Fans</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="discography.html">Discography</a></li>
+            <!--<li><a href="career.html">Career</a></li>-->
+            <li><a href="tribute.html">Tribute</a></li>
+            <li><a href="fans.html">Fans</a></li>
         </ul>
     </nav>
     <br>
     <section id="signup">
-    <h2>Forms</h2>
+        
     
-    <h3>Registration Form</h3>
+    <article id="fanimg">
+        <!-- <img src="img/ccornell2.jpg"> -->
+    </article>
+    <article id="a1">
+            <h2>Join Fan Club</h2> <br>
     
-    <form action="#" method="post">
+        <form action="#" method="post">
         
-        First Name: <br>
-        <input type="text" required name="first-name" placeholder="First Name"> <br>
+            <h2>First Name:</h2><br>
+            <input type="text" required name="first-name" placeholder="First Name"> <br>
+            
+            <h2 class=a2>Last Name:</h2> <br>
+            <input type="text" required name="last-name" placeholder="Last Name"> <br>
         
-        Last Name: <br>
-        <input type="text" required name="last-name" placeholder="Last Name"> <br>
+            <h2 class=a2>email:</h2> <br>
+            <input type="email" required name="email" placeholder="Email"> <br>
         
-        email: <br>
-        <input type="email" required name="email" placeholder="Email"> <br>
+            <h2>Password:</h2> <br>
+            <input type="password" required name="password" placeholder="password"> <br>
         
-        Password: <br>
-        <input type="password" required name="password" placeholder="password"> <br>
+            <h2>Birthday:</h2> <br>
+            <input type="date" name="birthday"> <br>
         
-        Birthday: <br>
-        <input type="date" name="birthday"> <br>
-        
-        Bands: <br>
-        <p class="banddd">
-        <input type="checkbox" name="band" value="soundgarden">Soundgarden<br>
-        <input type="checkbox" name="band" value="audioslave">Audioslave<br>
-        <input type="checkbox" name="band" value="templeofthedog">Temple of the Dog<br>
-        <input type="checkbox" name="band" value="solo">Chris Cornell Solo<br>
-        </p>
-        
-        Coding Languages:<br>
-        <input type="checkbox" name="html">HTML<br>
-        <input type="checkbox" name="CSS">CSS<br>
-        <input type="checkbox" name="javascript">javascript<br>
-        
-        <input type="submit" value="submit">
-        
-    </form>
-    </section>
-    <section>
-        <img src="img/cornellfan.jpg"></img>
+            <h2>Bands:</h2> <br>
+            <p class="banddds">
+                <label class="checkboxContainer">
+                    <input type="checkbox" name="band" value="soundgarden">
+                    <span class="checkmark"></span>
+                    Soundgarden
+                </label>
+                
+                
+            <br>
+                <label class="checkboxContainer">
+                    <input type="checkbox" name="band" value="audioslave">
+                    <span class="checkmark"></span>
+                    Audioslave
+                </label>
+                
+                
+            <br>
+                <label class="checkboxContainer">
+                    <input type="checkbox" name="band" value="templeofthedog">
+                    <span class="checkmark"></span>
+                    Temple of the Dog
+                </label>
+            <br>
+                <label class="checkboxContainer">
+                    <input type="checkbox" name="band" value="solo">
+                    <span class="checkmark"></span>
+                    Chris Cornell Solo
+                </label>
+            </p>
+            <br>
+            
+            <!-- Bands:<br>
+            <input type="checkbox" name="html">Soundgarden<br>
+            <input type="checkbox" name="CSS">Audioslave<br>
+            <input type="checkbox" name="javascript">Temple of the Dog<br>
+            -->
+            
+            <input type="submit" value="submit">
+        </form>
+    </article>
     </section>
     
     <section></section>

@@ -1,0 +1,429 @@
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.75;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    background-color: #000;
+}
+
+p {
+    font-size: 1.55rem;
+}
+
+nav {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0);
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    padding-left: 50%;
+    padding-right: 2%;
+    justify-content: flex-end;
+    /* remove bullets */
+    list-style-type: none;
+    font-family: 'Old Standard TT', serif;
+    
+}
+
+nav ul li{
+    flex-grow: 1;
+    font-family: 'Old Standard TT', serif;
+    font-size: 1.5rem;
+}
+
+nav ul li:first-child{
+    flex-grow: 1;
+}
+
+nav ul a:link {
+    /* remove underline */
+    text-decoration: none;
+    color: #F3F3F3;
+    display: block;
+    padding: 10px 0;
+}
+
+nav ul a:visited {
+    color: #717171;
+}
+
+nav ul a:hover {
+    background: #DADADA;
+    color: #000000;
+    text-decoration: underline;
+    border-radius: 50px;
+}
+
+slider {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    overflow: hidden;
+    position: absolute;
+    padding-top: 30px;
+}
+
+slider > * {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    animation: slide 12s infinite;
+    overflow: hidden;
+    clear: after;
+}
+
+slide p {
+    font-family: Comfortaa;
+    font-size: 70px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    margin-top: 300px;
+    color: #fff;
+}
+
+slide:nth-child(1) {
+    left: 0%;
+    animation-delay: -1s;
+    background-image: url(../img/audiodisc.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+slide:nth-child(2) {
+    
+    animation-delay: 2s;
+    background-image: url(../img/badmotorfinger.1.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+slide:nth-child(3) {
+    
+    animation-delay: 5s;
+    background-image: url(../img/audioslave2.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+slide:nth-child(4) {
+    
+    animation-delay: 8s;
+    background-image: url(../img/chrisrip.jpg);
+    /*background-size: cover;*/
+    /*background-position: top;*/
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@keyframes slide {
+    0% { left: 100%; width: 100%;}
+    5% { left: 0%;}
+    25% { left: 0%;}
+    30% { left: -100%; width: 100%;}
+    30.0001% { left: -100%; width: 0%}
+    100% { left: 100%; width: 0%;}
+}
+
+/*@keyframes slide {
+0%{
+   background-image: url(https://picsum.photos/600);
+ }
+ 33%{
+   background-image: url(https://picsum.photos/604);
+ }
+ 66%{
+   background-image: url(https://picsum.photos/605);
+ }
+ 100%{
+   background-image: url(https://picsum.photos/606);
+ }
+} */
+
+.career {
+    margin-top: 875px;
+    background-color: #000;
+    color: #fff;
+    font-size: 5.5rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    /*font-family: 'ZCOOL QingKe HuangYou', cursive;*/
+    text-align: center;
+    text-shadow: 6px 6px #C70205;
+}
+
+#disc1 {
+    /*margin-top: 905px;*/
+    display: flex;
+    justify-content: space-between;
+    /*position: relative;*/
+    /*top: 300px;*/
+    background-color: #000;
+    padding-top: 20px;
+    overflow: visible;
+}
+
+#disc1 article {
+    width: 49vw;
+    height: 100%;
+    padding: 20px;
+   /* overflow: auto; */
+    text-align: center;
+    border-left: solid 10px #C70205;
+    border-top: solid 10px #C70205;
+    border-right: solid 10px #C70205;
+    border-bottom: solid 10px #C70205;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#disc1 .band {
+    font-size: 5rem;
+    color: #fff;
+    font-family: 'Roboto Condensed', sans-serif;
+    /*font-family: 'ZCOOL QingKe HuangYou', cursive;*/
+    text-shadow: 4px 4px #C70205;
+    text-decoration: underline #fff;
+    /*border-bottom: solid 20px #C70205;*/
+}
+
+#disc1 h2 {
+    font-size: 3rem;
+    color: #fff;
+    font-family: 'Roboto Condensed', sans-serif;
+    /*font-family: 'ZCOOL QingKe HuangYou', cursive;*/
+    text-shadow: 2px 2px #C70205;
+    
+}
+
+#disc1 article table {
+    align-items: center;
+    justify-content: center;
+    /*margin-left: 75px;*/
+}
+
+table, td, th {  
+  border: 1px solid #ddd;
+  text-align: left;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.25rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 70%;
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 7px;
+}
+
+th {
+    text-align: center;
+}
+
+td:first-child {
+    text-align: center;
+}
+
+td:last-child {
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+tr:hover {
+    background-color: #9C9C9C;
+}
+
+.tl {
+    text-align: right;
+}
+
+.bandsh1{
+    color: #F3F3F3;
+}
+
+#disc1 article h1 {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 20px;
+}
+
+#disc1 article p, article h1 {
+    text-align: left;
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+}
+
+#disc1 article:first-child {
+    background: #000;
+}
+
+#disc1 article:last-child {
+    background: #fff;
+}
+
+#disc1 article:nth-of-type(2) {
+    background-color: #000;
+}
+
+#disc2 {
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    padding-top: 50px;
+}
+
+#disc2 article {
+    width: 49vw;
+    height: 500vh;
+    padding: 20px;
+   /* overflow: auto; */
+    text-align: center;
+    border-left: solid 10px #000000;
+    border-right: solid 10px #000000;
+}
+.bandsh1{
+    color: #F3F3F3;
+}
+#disc2 article h1 {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 20px;
+}
+
+#disc2 article p, article h1 {
+    text-align: left;
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+}
+
+#disc2 article:first-child {
+    background: #BDBDBD;
+}
+
+#disc2 article:last-child {
+    background: #BDBDBD;
+}
+
+#disc2 article:nth-of-type(2) {
+    background-color: #fff;
+}
+
+@media screen and (max-width: 768px){
+    nav {
+        text-align: center;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: rgba(0, 0, 0);
+        z-index: 100;
+    }
+
+    nav ul {
+        display: flex;
+        padding-left: 0;
+        /*justify-content: flex-end;*/
+        /* remove bullets */
+        list-style-type: none;
+        font-family: 'Old Standard TT', serif;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    nav ul li{
+        flex-grow: 1;
+        font-family: 'Old Standard TT', serif;
+        font-size: 1.5rem;
+    }
+
+    nav ul li:first-child{
+        flex-grow: 1;
+    }
+
+    nav ul a:link {
+        /* remove underline */
+        text-decoration: none;
+        color: #F3F3F3;
+        display: block;
+        padding: 10px 0;
+    }
+    
+    nav ul a:visited {
+        color: #717171;
+    }
+    
+    nav ul a:hover {
+        background: #DADADA;
+        color: #000000;
+        text-decoration: underline;
+        border-radius: 50px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    html {
+        font-size: 14px;
+    }
+    
+    header {
+        text-align: center;
+    }
+    
+    #disc1 {
+        flex-direction: column;
+        padding-top: 30px;
+    }
+    
+    #disc1 article {
+        width: 100vw;
+        height: auto;
+        overflow: visible;
+    }
+    
+    #bands article:first-child {
+        background: #BDBDBD;
+    
+    }
+
+    #bands article:last-child {
+        background: #BDBDBD;
+    }
+     
+    #disc1 {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+}
