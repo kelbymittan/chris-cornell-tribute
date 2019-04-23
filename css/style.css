@@ -65,7 +65,7 @@ nav ul a:visited {
 }
 
 nav ul a:hover {
-    /* border-bottom: 1px solid red; */
+    border: solid 5px #C70205;
     background: #DADADA;
     color: #000000;
     text-decoration: underline;
