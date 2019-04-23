@@ -28,6 +28,7 @@ nav {
     width: 100%;
     background: rgba(0, 0, 0);
     z-index: 100;
+    
 }
 
 nav ul {
@@ -37,13 +38,14 @@ nav ul {
     justify-content: flex-end;
     /* remove bullets */
     list-style-type: none;
-    font-family: 'Old Standard TT', serif;
+    
 }
 
 nav ul li{
     flex-grow: 1;
-    font-family: 'Old Standard TT', serif;
-    font-size: 1.5rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.75rem;
+    font-weight: bold;
 }
 
 nav ul li:first-child{
@@ -88,12 +90,14 @@ nav ul a:hover {
 #bio h1 {
     color: #DBDBDB;
     font-family: 'Cinzel', serif;
+    font-size: 4.5rem;
 }
 
 #bio p {
     color: #DBDBDB;
     font-family: 'Lato', sans-serif;
     width: 50%;
+    font-size: 1.25rem;
 }
 
 #bands {
@@ -104,7 +108,7 @@ nav ul a:hover {
 
 #bands article {
     width: 49vw;
-    height: 180vh;
+    height: 200vh;
     padding: 20px;
    /* overflow: auto; */
     text-align: center;
@@ -124,7 +128,7 @@ nav ul a:hover {
 
 #bands article p, article h1 {
     text-align: left;
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-family: 'Lato', sans-serif;
 }
 
@@ -152,8 +156,13 @@ nav ul a:hover {
     background-color: #000;
     border-radius: 25px;
     font-family: 'Cinzel', serif;
-    font-size: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
     padding: 10px;
+}
+
+#bio div {
+    padding-top: 30px;
 }
 
 .wiki:hover {
@@ -203,6 +212,12 @@ nav ul a:hover {
     width: 100%;
     background-color: #000000;
     color: #DADADA;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.3rem;
+}
+
+#a1 h1 {
+    font-size: 2.25rem
 }
 
 
@@ -328,10 +343,7 @@ input[type=submit]:hover {
     top: -15px;
 }
 
-
-
 /* Media Queries */
-/* https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
 
 @media screen and (max-width: 1400px){
     html {
@@ -385,15 +397,15 @@ input[type=submit]:hover {
         /*justify-content: flex-end;*/
         /* remove bullets */
         list-style-type: none;
-        font-family: 'Old Standard TT', serif;
         flex-direction: column;
         justify-content: center;
     }
 
     nav ul li{
         flex-grow: 1;
-        font-family: 'Old Standard TT', serif;
-        font-size: 1.5rem;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 1.75rem;
+        font-weight: bold;
     }
 
     nav ul li:first-child{
@@ -401,7 +413,6 @@ input[type=submit]:hover {
     }
 
     nav ul a:link {
-        /* remove underline */
         text-decoration: none;
         color: #F3F3F3;
         display: block;
@@ -422,5 +433,30 @@ input[type=submit]:hover {
     #bio {
         position: relative;
         top: 200px;
+    }
+    
+    #signup {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #000000; 
+        position: absolute;
+        top: 120px;
+    }
+    
+    #fanimg {
+        height: 50vh;
+        background-position: top;
+
+    }
+    
+    .bandsh1 {
+        position: relative;
+        top: 80px;
+    }
+    
+    #bands {
+        position: relative;
+        top: 80px;
     }
 }
