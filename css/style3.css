@@ -32,7 +32,6 @@ nav ul {
     padding-left: 50%;
     padding-right: 2%;
     justify-content: flex-end;
-    /* remove bullets */
     list-style-type: none;
 }
 
@@ -48,7 +47,6 @@ nav ul li:first-child{
 }
 
 nav ul a:link {
-    /* remove underline */
     text-decoration: none;
     color: #F3F3F3;
     display: block;
@@ -77,6 +75,8 @@ slider {
     padding-top: 30px;
 }
 
+/* SLIDESHOW ANIMATION */
+
 slider > * {
     position: absolute;
     display: block;
@@ -89,8 +89,6 @@ slider > * {
 }
 
 slide p {
-    font-family: Comfortaa;
-    font-size: 70px;
     text-align: center;
     display: inline-block;
     width: 100%;
@@ -132,8 +130,6 @@ slide:nth-child(4) {
     
     animation-delay: 8s;
     background-image: url(../img/chrisrip.jpg);
-    /*background-size: cover;*/
-    /*background-position: top;*/
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -146,6 +142,10 @@ slide:nth-child(4) {
     30% { left: -100%; width: 100%;}
     30.0001% { left: -100%; width: 0%}
     100% { left: 100%; width: 0%;}
+}
+
+#navicons {
+    padding-right: 5px;
 }
 
 .career {
@@ -162,14 +162,12 @@ slide:nth-child(4) {
     display: flex;
     justify-content: space-between;
     background-color: #000;
-    /*overflow: visible;*/
 }
 
 #disc1 article {
     width: 49vw;
     height: 100%;
     padding: 20px;
-   /* overflow: auto; */
     text-align: center;
     border-left: solid 10px #C70205;
     border-top: solid 10px #C70205;
@@ -184,17 +182,14 @@ slide:nth-child(4) {
     font-size: 5rem;
     color: #fff;
     font-family: 'Roboto Condensed', sans-serif;
-    /*font-family: 'ZCOOL QingKe HuangYou', cursive;*/
     text-shadow: 4px 4px #C70205;
     text-decoration: underline #fff;
-    /*border-bottom: solid 20px #C70205;*/
 }
 
 #disc1 h2 {
     font-size: 3rem;
     color: #fff;
     font-family: 'Roboto Condensed', sans-serif;
-    /*font-family: 'ZCOOL QingKe HuangYou', cursive;*/
     text-shadow: 2px 2px #C70205;
     
 }
@@ -202,7 +197,6 @@ slide:nth-child(4) {
 #disc1 article table {
     align-items: center;
     justify-content: center;
-    /*margin-left: 75px;*/
 }
 
 table, td, th {  
@@ -289,7 +283,6 @@ tr:hover {
     width: 49vw;
     height: 500vh;
     padding: 20px;
-   /* overflow: auto; */
     text-align: center;
     border-left: solid 10px #000000;
     border-right: solid 10px #000000;
@@ -321,6 +314,15 @@ tr:hover {
     background-color: #fff;
 }
 
+.top {
+    color: #F3F3F3;
+    background-color: #000;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 20px;
+}
+
 @media screen and (max-width: 768px){
     nav {
         text-align: center;
@@ -334,8 +336,6 @@ tr:hover {
     nav ul {
         display: flex;
         padding-left: 0;
-        /*justify-content: flex-end;*/
-        /* remove bullets */
         list-style-type: none;
         font-family: 'Old Standard TT', serif;
         flex-direction: column;

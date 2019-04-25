@@ -20,7 +20,7 @@ h1 {
 p {
     font-size: 1.125rem;
 }
-
+/* CSS FOR NAV BAR */
 nav {
     text-align: center;
     position: fixed;
@@ -108,9 +108,8 @@ nav ul a:hover {
 
 #bands article {
     width: 49vw;
-    height: 200vh;
+    height: 250vh;
     padding: 20px;
-   /* overflow: auto; */
     text-align: center;
     border-left: solid 10px #000000;
     border-right: solid 10px #000000;
@@ -183,7 +182,6 @@ nav ul a:hover {
 }
 
 .bandlinks:hover {
-    /* border-bottom: 1px solid red; */
     background: #DADADA;
     color: #000000;
     text-decoration: underline;
@@ -220,6 +218,7 @@ nav ul a:hover {
     font-size: 2.25rem
 }
 
+/* CSS FOR FORM */
 
 input[type=text] {
   width: 50%;
